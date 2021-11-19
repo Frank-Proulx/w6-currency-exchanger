@@ -6,8 +6,39 @@
 <body>
   <div class="container">
     <h1>Some Title</h1>
+    <form id="exchange">
+      <div class="form-group">
+        <label for="amount">Enter your amount in US dollars:</label>
+        <input id="amount" type="number" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="country">Select your size</label>
+        <select class="form-control" id="country">
+          <option value="EUR" selected>European Union</option>
+          <option value="JPY">Japan</option>
+          <option value="INR">India</option>
+          <option value="BWP">Botswana</option>
+          <option value="BRL">Brazil</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="countryCode">Enter your country:</label>
+        <input id="countryCode" type="text" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+    <div id="outputRate">
+    </div>
+    <div id="showError">
+    </div>
   </div>
 </body>
 </html>
+
+
+
+
+
+
 
 <!-- <img src="./../src/assets/images/puppy.jpg" alt="such a pup!"> -->
