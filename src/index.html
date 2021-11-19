@@ -14,7 +14,8 @@
       <div class="form-group">
         <label for="country">Select your country from the list:</label>
         <select class="form-control" id="country">
-          <option value="EUR" selected>European Union</option>
+          <option value="manual" selected>Choose from the list or enter your own code below</option>
+          <option value="EUR">European Union</option>
           <option value="JPY">Japan</option>
           <option value="INR">India</option>
           <option value="BWP">Botswana</option>
@@ -22,7 +23,7 @@
         </select>
       </div>
       <div class="form-group">
-        <label for="countryCode">Enter your country:</label>
+        <label for="countryCode">You may enter your own code here, a full list of supported currencies can be found <a href="https://www.exchangerate-api.com/docs/supported-currencies" target="_blank">here</a></label>
         <input id="countryCode" type="text" class="form-control">
       </div>
       <button type="submit" class="btn btn-success">Submit</button>
