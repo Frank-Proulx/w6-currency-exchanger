@@ -12,7 +12,7 @@
         <input id="amount" type="number" class="form-control" min=1 required>
       </div>
       <div class="form-group">
-        <label for="country">Select your country from the list:</label>
+        <label for="country">Select a currency from the list:</label>
         <select class="form-control" id="country">
           <option value="manual" selected>Choose from the list or enter your own code below</option>
           <option value="AED">UAE Dirham - United Arab Emirates</option>
@@ -181,8 +181,13 @@
         <label for="countryCode">You may enter your own code here, a full list of supported currencies can be found <a href="https://www.exchangerate-api.com/docs/supported-currencies" target="_blank">here</a></label>
         <input id="countryCode" type="text" class="form-control">
       </div>
+      <div class="form-group">
+        <input type="radio" id="fromUSD" name="currencyChoice" value="fromUSD" checked>
+        <label for="fromUSD">Convert USD to selected currency</label>
+        <input type="radio" id="toUSD" name="currencyChoice" value="toUSD">
+        <label for="toUSD">Convert to US dollars</label>
+      </div>
       <button type="submit" class="btn btn-success">Submit</button>
-      <button type="submit" class="btn btn-danger">Reverse exchange</button>
     </form>
     <div id="outputRate">
     </div>

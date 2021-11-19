@@ -5,10 +5,22 @@ import './css/styles.css';
 import { CurrencyService } from './currency-service.js';
 import { codeIdentifier } from './switch.js';
 
-function displayRate(response, country, amount) {
+function displayFromUSD(response, country, amount) {
   if(response.conversion_rates) {
     if (response.conversion_rates[country]) {
-      $("#outputRate").text(`Your currency amount is ${(response.conversion_rates[country] * amount).toFixed(2)} ${codeIdentifier(country)}`);
+      $("#outputRate").text(`Your currency amount is ${(amount * response.conversion_rates[country]).toFixed(2)} ${codeIdentifier(country)}`);
+    } else {
+      $("#outputRate").text("Please enter a valid country code from the list of supported currencies");
+    }
+  } else {
+    $("#showError").text(`You have encountered an error: ${response.message}`);
+  }
+}
+
+function displayToUSD(response, country, amount) {
+  if(response.conversion_rates) {
+    if (response.conversion_rates[country]) {
+      $("#outputRate").text(`Your currency amount is ${(amount / response.conversion_rates[country]).toFixed(2)} US dollars`);
     } else {
       $("#outputRate").text("Please enter a valid country code from the list of supported currencies");
     }
@@ -22,12 +34,18 @@ $("#exchange").submit(function(event) {
   let amount = parseInt($("#amount").val());
   let country = $("#country").val();
   let countryCode = $("#countryCode").val().toUpperCase();
+  let exchangeDirection = $("input[name='currencyChoice']:checked").val();
   CurrencyService.getExchangeRate()
     .then(function(response) {
-      if (country !== "manual") {
-        displayRate(response, country, amount);
+      if (country !== "manual" && exchangeDirection === "fromUSD") {
+        displayFromUSD(response, country, amount);
+      } else if (country === "manual" && exchangeDirection === "fromUSD") {
+        displayFromUSD(response, countryCode, amount);
+      } else if (country !== "manual" && exchangeDirection === "toUSD") {
+        displayToUSD(response, country, amount);
       } else {
-        displayRate(response, countryCode, amount);
+        displayToUSD(response, countryCode, amount);
       }
     });
 });
+
