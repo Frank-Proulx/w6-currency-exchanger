@@ -1,329 +1,975 @@
 
-// function codeIdentifier(code) {
+export function codeIdentifier(code) {
+  let codeDetails = "";
+  switch (code) {
+    case "AED":
+      codeDetails = "UAE Dirham";
+      break;
+    case "AFN":
+      codeDetails = "Afghan Afghani";
+      break;
+    case "ALL":
+      codeDetails = "Albanian Lek";
+      break;
+    case "AMD":
+      codeDetails = "Armenian Dram";
+      break;
+    case "ANG":
+      codeDetails = "Netherlands Antillian Guilder";
+      break;
+    case "AOA":
+      codeDetails = "Angolan Kwanza";
+      break;
+    case "ARS":
+      codeDetails = "Argentine Peso";
+      break;
+    case "AUD":
+      codeDetails = "Australian Dollar";
+      break;
+    case "AWG":
+      codeDetails = "Aruban Florin";
+      break;
+    case "AZN":
+      codeDetails = "Azerbaijani Manat";
+      break;
+    case "BAM":
+      codeDetails = "Bosnia and Herzegovina Mark";
+      break;
+    case "BBD":
+      codeDetails = "Barbados Dollar";
+      break;
+    case "BDT":
+      codeDetails = "Bangladeshi Taka";
+      break;
+    case "BGN":
+      codeDetails = "Bulgarian Lev";
+      break;
+    case "BHD":
+      codeDetails = "Bahraini Dinar";
+      break;
+    case "BIF":
+      codeDetails = "Burundian Franc";
+      break;
+    case "BMD":
+      codeDetails = "Bermudian Dollar";
+      break;
+    case "BND":
+      codeDetails = "Brunei Dollar";
+      break;
+    case "BOB":
+      codeDetails = "Bolivian Boliviano";
+      break;
+    case "BRL":
+      codeDetails = "Brazilian Real";
+      break;
+    case "BSD":
+      codeDetails = "Bahamian Dollar";
+      break;
+    case "BTN":
+      codeDetails = "Bhutanese Ngultrum";
+      break;
+    case "BWP":
+      codeDetails = "Botswana Pula";
+      break;
+    case "BYN":
+      codeDetails = "Belarusian Ruble";
+      break;
+    case "BZD":
+      codeDetails = "Belize Dollar";
+      break;
+    case "CAD":
+      codeDetails = "Canadian Dollar";
+      break;
+    case "CDF":
+      codeDetails = "Congolese Franc";
+      break;
+    case "CHF":
+      codeDetails = "Swiss Franc";
+      break;
+    case "CLP":
+      codeDetails = "Chilean Peso";
+      break;
+    case "CNY":
+      codeDetails = "Chinese Renminbi";
+      break;
+    case "COP":
+      codeDetails = "Colombian Peso";
+      break;
+    case "CRC":
+      codeDetails = "Costa Rican Colon";
+      break;
+    case "CUC":
+      codeDetails = "Cuban Convertible Peso";
+      break;
+    case "CUP":
+      codeDetails = "Cuban Peso";
+      break;
+    case "CVE":
+      codeDetails = "Cape Verdean Escudo";
+      break;
+    case "CZK":
+      codeDetails = "Czech Koruna";
+      break;
+    case "DJF":
+      codeDetails = "Djiboutian Franc";
+      break;
+    case "DKK":
+      codeDetails = "Danish Krone";
+      break;
+    case "DOP":
+      codeDetails = "Dominican Peso";
+      break;
+    case "DZD":
+      codeDetails = "Algerian Dinar";
+      break;
+    case "EGP":
+      codeDetails = "Egyptian Pound";
+      break;
+    case "ERN":
+      codeDetails = "Eritrean Nakfa";
+      break;
+    case "ETB":
+      codeDetails = "Ethiopian Birr";
+      break;
+    case "EUR":
+      codeDetails = "Euro";
+      break;
+    case "FJD":
+      codeDetails = "Fiji Dollar";
+      break;
+    case "FKP":
+      codeDetails = "Falkland Islands Pound";
+      break;
+    case "FOK":
+      codeDetails = "Faroese Króna";
+      break;
+    case "GBP":
+      codeDetails = "Pound Sterling";
+      break;
+    case "GEL":
+      codeDetails = "Georgian Lari";
+      break;
+    case "GGP":
+      codeDetails = "Guernsey Pound";
+      break;
+    case "GHS":
+      codeDetails = "Ghanaian Cedi";
+      break;
+    case "GIP":
+      codeDetails = "Gibraltar Pound";
+      break;
+    case "GMD":
+      codeDetails = "Gambian Dalasi";
+      break;
+    case "GNF":
+      codeDetails = "Guinean Franc";
+      break;
+    case "GTQ":
+      codeDetails = "Guatemalan Quetzal";
+      break;
+    case "GYD":
+      codeDetails = "Guyanese Dollar";
+      break;
+    case "HKD":
+      codeDetails = "Hong Kong Dollar";
+      break;
+    case "HNL":
+      codeDetails = "Honduran Lempira";
+      break;
+    case "HRK":
+      codeDetails = "Croatian Kuna";
+      break;
+    case "HTG":
+      codeDetails = "Haitian Gourde";
+      break;
+    case "HUF":
+      codeDetails = "Hungarian Forint";
+      break;
+    case "IDR":
+      codeDetails = "Indonesian Rupiah";
+      break;
+    case "ILS":
+      codeDetails = "Israeli New Shekel";
+      break;
+    case "IMP":
+      codeDetails = "Manx Pound";
+      break;
+    case "INR":
+      codeDetails = "Indian Rupee";
+      break;
+    case "IQD":
+      codeDetails = "Iraqi Dinar";
+      break;
+    case "IRR":
+      codeDetails = "Iranian Rial";
+      break;
+    case "ISK":
+      codeDetails = "Icelandic Króna";
+      break;
+    case "JMD":
+      codeDetails = "Jamaican Dollar";
+      break;
+    case "JOD":
+      codeDetails = "Jordanian Dinar";
+      break;
+    case "JPY":
+      codeDetails = "Japanese Yen";
+      break;
+    case "KES":
+      codeDetails = "Kenyan Shilling";
+      break;
+    case "KGS":
+      codeDetails = "Kyrgyzstani Som";
+      break;
+    case "KHR":
+      codeDetails = "Cambodian Riel";
+      break;
+    case "KID":
+      codeDetails = "Kiribati Dollar";
+      break;
+    case "KMF":
+      codeDetails = "Comorian Franc";
+      break;
+    case "KRW":
+      codeDetails = "South Korean Won";
+      break;
+    case "KWD":
+      codeDetails = "Kuwaiti Dinar";
+      break;
+    case "KYD":
+      codeDetails = "Cayman Islands Dollar";
+      break;
+    case "KZT":
+      codeDetails = "Kazakhstani Tenge";
+      break;
+    case "LAK":
+      codeDetails = "Lao Kip";
+      break;
+    case "LBP":
+      codeDetails = "Lebanese Pound";
+      break;
+    case "LKR":
+      codeDetails = "Sri Lanka Rupee";
+      break;
+    case "LRD":
+      codeDetails = "Liberian Dollar";
+      break;
+    case "LSL":
+      codeDetails = "Lesotho Loti";
+      break;
+    case "LYD":
+      codeDetails = "Libyan Dinar";
+      break;
+    case "MAD":
+      codeDetails = "Moroccan Dirham";
+      break;
+    case "MDL":
+      codeDetails = "Moldovan Leu";
+      break;
+    case "MGA":
+      codeDetails = "Malagasy Ariary";
+      break;
+    case "MKD":
+      codeDetails = "Macedonian Denar";
+      break;
+    case "MMK":
+      codeDetails = "Burmese Kyat";
+      break;
+    case "MNT":
+      codeDetails = "Mongolian Tögrög";
+      break;
+    case "MOP":
+      codeDetails = "Macanese Pataca";
+      break;
+    case "MRU":
+      codeDetails = "Mauritanian Ouguiya";
+      break;
+    case "MUR":
+      codeDetails = "Mauritian Rupee";
+      break;
+    case "MVR":
+      codeDetails = "Maldivian Rufiyaa";
+      break;
+    case "MWK":
+      codeDetails = "Malawian Kwacha";
+      break;
+    case "MXN":
+      codeDetails = "Mexican Peso";
+      break;
+    case "MYR":
+      codeDetails = "Malaysian Ringgit";
+      break;
+    case "MZN":
+      codeDetails = "Mozambican Metical";
+      break;
+    case "NAD":
+      codeDetails = "Namibian Dolla";
+      break;
+    case "NGN":
+      codeDetails = "Nigerian Naira";
+      break;
+    case "NIO":
+      codeDetails = "Nicaraguan Córdoba";
+      break;
+    case "NOK":
+      codeDetails = "Norwegian Krone";
+      break;
+    case "NPR":
+      codeDetails = "Nepalese Rupee";
+      break;
+    case "NZD":
+      codeDetails = "New Zealand Dollar";
+      break;
+    case "OMR":
+      codeDetails = "Omani Rial";
+      break;
+    case "PAB":
+      codeDetails = "Panamanian Balboa";
+      break;
+    case "PEN":
+      codeDetails = "Peruvian Sol";
+      break;
+    case "PGK":
+      codeDetails = "Papua New Guinean Kina";
+      break;
+    case "PHP":
+      codeDetails = "Philippine Peso";
+      break;
+    case "PKR":
+      codeDetails = "Pakistani Rupee";
+      break;
+    case "PLN":
+      codeDetails = "Polish Złoty";
+      break;
+    case "PYG":
+      codeDetails = "Paraguayan Guaraní";
+      break;
+    case "QAR":
+      codeDetails = "Qatari Riyal";
+      break;
+    case "RON":
+      codeDetails = "Romanian Leu";
+      break;
+    case "RSD":
+      codeDetails = "Serbian Dinar";
+      break;
+    case "RUB":
+      codeDetails = "Russian Ruble";
+      break;
+    case "RWF":
+      codeDetails = "Rwandan Franc";
+      break;
+    case "SAR":
+      codeDetails = "Saudi Riyal";
+      break;
+    case "SBD":
+      codeDetails = "Solomon Islands Dollar";
+      break;
+    case "SCR":
+      codeDetails = "Seychellois Rupee";
+      break;
+    case "SDG":
+      codeDetails = "Sudanese Pound";
+      break;
+    case "SEK":
+      codeDetails = "Swedish Krona";
+      break;
+    case "SGD":
+      codeDetails = "Singapore Dollar";
+      break;
+    case "SHP":
+      codeDetails = "Saint Helena Pound";
+      break;
+    case "SLL":
+      codeDetails = "Sierra Leonean Leone";
+      break;
+    case "SOS":
+      codeDetails = "Somali Shilling";
+      break;
+    case "SRD":
+      codeDetails = "Surinamese Dollar";
+      break;
+    case "SSP":
+      codeDetails = "South Sudanese Pound";
+      break;
+    case "STN":
+      codeDetails = "São Tomé and Príncipe Dobra";
+      break;
+    case "SYP":
+      codeDetails = "Syrian Pound";
+      break;
+    case "SZL":
+      codeDetails = "Eswatini Lilangeni";
+      break;
+    case "THB":
+      codeDetails = "Thai Baht";
+      break;
+    case "TJS":
+      codeDetails = "Tajikistani Somoni";
+      break;
+    case "TMT":
+      codeDetails = "Turkmenistan Manat";
+      break;
+    case "TND":
+      codeDetails = "Tunisian Dinar";
+      break;
+    case "TOP":
+      codeDetails = "Tongan Paʻanga";
+      break;
+    case "TRY":
+      codeDetails = "Turkish Lira";
+      break;
+    case "TTD":
+      codeDetails = "Trinidad and Tobago Dollar";
+      break;
+    case "TVD":
+      codeDetails = "Tuvaluan Dollar";
+      break;
+    case "TWD":
+      codeDetails = "New Taiwan Dollar";
+      break;
+    case "TZS":
+      codeDetails = "Tanzanian Shilling";
+      break;
+    case "UAH":
+      codeDetails = "Ukrainian Hryvnia";
+      break;
+    case "UGX":
+      codeDetails = "Ugandan Shilling";
+      break;
+    case "USD":
+      codeDetails = "United States Dollar";
+      break;
+    case "UYU":
+      codeDetails = "Uruguayan Peso";
+      break;
+    case "UZS":
+      codeDetails = "Uzbekistani So'm";
+      break;
+    case "VES":
+      codeDetails = "Venezuelan Bolívar Soberano";
+      break;
+    case "VND":
+      codeDetails = "Vietnamese Đồng";
+      break;
+    case "VUV":
+      codeDetails = "Vanuatu Vatu";
+      break;
+    case "WST":
+      codeDetails = "Samoan Tālā";
+      break;
+    case "XAF":
+      codeDetails = "Central African CFA Franc";
+      break;
+    case "XCD":
+      codeDetails = "East Caribbean Dollar";
+      break;
+    case "XDR":
+      codeDetails = "Special Drawing Rights";
+      break;
+    case "XOF":
+      codeDetails = "West African CFA franc";
+      break;
+    case "XPF":
+      codeDetails = "CFP Franc";
+      break;
+    case "YER":
+      codeDetails = "Yemeni Rial";
+      break;
+    case "ZAR":
+      codeDetails = "South African Rand";
+      break;
+    case "ZMW":
+      codeDetails = "Zambian Kwacha";
+      break;
+  }
+  return codeDetails;
+}
+
+
+// export function codeIdentifier(code) {
 //   let codeDetails = "";
 //   switch (code) {
-//     "AED"	"UAE Dirham - United Arab Emirates"
-//     "AFN"	"Afghan Afghani	- Afghanistan"
-//     "ALL"	"Albanian Lek	- Albania"
-//     "AMD"	"Armenian Dram - Armenia"
-//     "ANG"	"Netherlands Antillian Guilder - Netherlands Antilles"
-//     "AOA"	"Angolan Kwanza	- Angola"
-//     "ARS"	"Argentine Peso	- Argentina"
-//     "AUD"	"Australian Dollar - Australia"
-//     "AWG"	"Aruban Florin - Aruba"
-//     "AZN"	"Azerbaijani Manat - Azerbaijan"
-//     "BAM"	"Bosnia and Herzegovina Mark - Bosnia and Herzegovina"
-//     "BBD"	"Barbados Dollar - Barbados"
-//     "BDT"	"Bangladeshi Taka	- Bangladesh"
-//     "BGN"	"Bulgarian Lev - Bulgaria"
-//     "BHD"	"Bahraini Dinar	- Bahrain"
-//     "BIF"	"Burundian Franc - Burundi"
-//     "BMD"	"Bermudian Dollar	- Bermuda"
-//     "BND"	"Brunei Dollar - Brunei"
-//     "BOB"	"Bolivian Boliviano	- Bolivia"
-//     "BRL"	"Brazilian Real	- Brazil"
-//     "BSD"	"Bahamian Dollar - Bahamas"
-//     "BTN"	"Bhutanese Ngultrum	- Bhutan"
-//     "BWP"	"Botswana Pula - Botswana"
-//     "BYN"	"Belarusian Ruble	- Belarus"
-//     "BZD"	"Belize Dollar - Belize"
-//     "CAD"	"Canadian Dollar - Canada"
-//     "CDF"	"Congolese Franc - Democratic Republic of the Congo"
-//     "CHF"	"Swiss Franc - Switzerland"
-//     "CLP"	"Chilean Peso	- Chile"
-//     "CNY"	"Chinese Renminbi	- China"
-//     "COP"	"Colombian Peso	- Colombia"
-//     "CRC"	"Costa Rican Colon - Costa Rica"
-//     "CUC"	"Cuban Convertible Peso	- Cuba"
-//     "CUP"	"Cuban Peso	- Cuba"
-//     "CVE"	"Cape Verdean Escudo - Cape Verde"
-//     "CZK"	"Czech Koruna	- Czech Republic"
-//     "DJF"	"Djiboutian Franc	- Djibouti"
-//     "DKK"	"Danish Krone	- Denmark"
-//     "DOP"	"Dominican Peso	- Dominican Republic"
-//     "DZD"	"Algerian Dinar	- Algeria"
-//     "EGP"	"Egyptian Pound	- Egypt"
-//     "ERN"	"Eritrean Nakfa	- Eritrea"
-//     "ETB"	"Ethiopian Birr	- Ethiopia"
-//     "EUR"	"Euro	- European Union"
-//     "FJD"	"Fiji Dollar - Fiji"
-//     "FKP"	"Falkland Islands Pound	- Falkland Islands"
-//     "FOK"	"Faroese Króna - Faroe Islands"
-//     "GBP"	"Pound Sterling	- United Kingdom"
-//     "GEL"	"Georgian Lari - Georgia"
-//     "GGP"	"Guernsey Pound	- Guernsey"
-//     "GHS"	"Ghanaian Cedi - Ghana"
-//     "GIP"	"Gibraltar Pound - Gibraltar"
-//     "GMD"	"Gambian Dalasi - The Gambia"
-//     "GNF"	"Guinean Franc - Guinea"
-//     "GTQ"	"Guatemalan Quetzal	- Guatemala"
-//     "GYD"	"Guyanese Dollar - Guyana"
-//     "HKD"	"Hong Kong Dollar	- Hong Kong"
-//     "HNL"	"Honduran Lempira	- Honduras"
-//     "HRK"	"Croatian Kuna - Croatia"
-//     "HTG"	"Haitian Gourde	- Haiti"
-//     "HUF"	"Hungarian Forint	- Hungary"
-//     "IDR"	"Indonesian Rupiah - Indonesia"
-//     "ILS"	"Israeli New Shekel	- Israel"
-//     "IMP"	"Manx Pound	- Isle of Man"
-//     "INR"	"Indian Rupee	- India"
-//     "IQD"	"Iraqi Dinar - Iraq"
-//     "IRR"	"Iranian Rial	- Iran"
-//     "ISK"	"Icelandic Króna - Iceland"
-//     "JMD"	"Jamaican Dollar - Jamaica"
-//     "JOD"	"Jordanian Dinar - Jordan"
-//     "JPY"	"Japanese Yen - Japan"
-//     "KES"	"Kenyan Shilling - Kenya"
-//     "KGS"	"Kyrgyzstani Som - Kyrgyzstan"
-//     "KHR"	"Cambodian Riel	- Cambodia"
-//     "KID"	"Kiribati Dollar - Kiribati"
-//     "KMF"	"Comorian Franc	- Comoros"
-//     "KRW"	"South Korean Won	- South Korea"
-//     "KWD"	"Kuwaiti Dinar - Kuwait"
-//     "KYD"	"Cayman Islands Dollar - Cayman Islands"
-//     "KZT"	"Kazakhstani Tenge - Kazakhstan"
-//     "LAK"	"Lao Kip - Laos"
-//     "LBP"	"Lebanese Pound	- Lebanon"
-//     "LKR"	"Sri Lanka Rupee - Sri Lanka"
-//     "LRD"	"Liberian Dollar - Liberia"
-//     "LSL"	"Lesotho Loti - Lesotho"
-//     "LYD"	"Libyan Dinar - Libya"
-//     "MAD"	"Moroccan Dirham - Morocco"
-//     "MDL"	"Moldovan Leu - Moldova"
-//     "MGA"	"Malagasy Ariary - Madagascar"
-//     "MKD"	"Macedonian Denar	- North Macedonia"
-//     "MMK"	"Burmese Kyat	- Myanmar"
-//     "MNT"	"Mongolian Tögrög	- Mongolia"
-//     "MOP"	"Macanese Pataca - Macau"
-//     "MRU"	"Mauritanian Ouguiya - Mauritania"
-//     "MUR"	"Mauritian Rupee - Mauritius"
-//     "MVR"	"Maldivian Rufiyaa - Maldives"
-//     "MWK"	"Malawian Kwacha - Malawi"
-//     "MXN"	"Mexican Peso	- Mexico"
-//     "MYR"	"Malaysian Ringgit - Malaysia"
-//     "MZN"	"Mozambican Metical - Mozambique"
-//     "NAD"	"Namibian Dolla - Namibia"
-//     "NGN"	"Nigerian Naira	- Nigeria"
-//     "NIO"	"Nicaraguan Córdoba	- Nicaragua"
-//     "NOK"	"Norwegian Krone - Norway"
-//     "NPR"	"Nepalese Rupee	- Nepal"
-//     "NZD"	"New Zealand Dollar	- New Zealand"
-//     "OMR"	"Omani Rial	- Oman"
-//     "PAB"	"Panamanian Balboa - Panama"
-//     "PEN"	"Peruvian Sol	- Peru"
-//     "PGK"	"Papua New Guinean Kina	- Papua New Guinea"
-//     "PHP"	"Philippine Peso - Philippines"
-//     "PKR"	"Pakistani Rupee - Pakistan"
-//     "PLN"	"Polish Złoty	- Poland"
-//     "PYG"	"Paraguayan Guaraní	- Paraguay"
-//     "QAR"	"Qatari Riyal	- Qatar"
-//     "RON"	"Romanian Leu	- Romania"
-//     "RSD"	"Serbian Dinar - Serbia"
-//     "RUB"	"Russian Ruble - Russia"
-//     "RWF"	"Rwandan Franc - Rwanda"
-//     "SAR"	"Saudi Riyal - Saudi Arabia"
-//     "SBD"	"Solomon Islands Dollar - Solomon Islands"
-//     "SCR"	"Seychellois Rupee - Seychelles"
-//     "SDG"	"Sudanese Pound	- Sudan"
-//     "SEK"	"Swedish Krona - Sweden"
-//     "SGD"	"Singapore Dollar	- Singapore"
-//     "SHP"	"Saint Helena Pound	- Saint Helena"
-//     "SLL"	"Sierra Leonean Leone	- Sierra Leone"
-//     "SOS"	"Somali Shilling - Somalia"
-//     "SRD"	"Surinamese Dollar - Suriname"
-//     "SSP"	"South Sudanese Pound	- South Sudan"
-//     "STN"	"São Tomé and Príncipe Dobra - São Tomé and Príncipe"
-//     "SYP"	"Syrian Pound	- Syria"
-//     "SZL"	"Eswatini Lilangeni	- Eswatini"
-//     "THB"	"Thai Baht - Thailand"
-//     "TJS"	"Tajikistani Somoni	- Tajikistan"
-//     "TMT"	"Turkmenistan Manat	- Turkmenistan"
-//     "TND"	"Tunisian Dinar	- Tunisia"
-//     "TOP"	"Tongan Paʻanga	- Tonga"
-//     "TRY"	"Turkish Lira	- Turkey"
-//     "TTD"	"Trinidad and Tobago Dollar	- Trinidad and Tobago"
-//     "TVD"	"Tuvaluan Dollar - Tuvalu"
-//     "TWD"	"New Taiwan Dollar - Taiwan"
-//     "TZS"	"Tanzanian Shilling	- Tanzania"
-//     "UAH"	"Ukrainian Hryvnia - Ukraine"
-//     "UGX"	"Ugandan Shilling	- Uganda"
-//     "USD"	"United States Dollar	- United States"
-//     "UYU"	"Uruguayan Peso	- Uruguay"
-//     "UZS"	"Uzbekistani So'm	- Uzbekistan"
-//     "VES"	"Venezuelan Bolívar Soberano - Venezuela"
-//     "VND"	"Vietnamese Đồng - Vietnam"
-//     "VUV"	"Vanuatu Vatu	- Vanuatu"
-//     "WST"	"Samoan Tālā - Samoa"
-//     "XAF"	"Central African CFA Franc - CEMAC"
-//     "XCD"	"East Caribbean Dollar - Organisation of Eastern Caribbean States"
-//     "XDR"	"Special Drawing Rights	- International Monetary Fund"
-//     "XOF"	"West African CFA franc	- CFA"
-//     "XPF"	"CFP Franc - Collectivités d'Outre-Mer"
-//     "YER"	"Yemeni Rial - Yemen"
-//     "ZAR"	"South African Rand	- South Africa"
-//     "ZMW"	"Zambian Kwacha	- Zambia"
+//     case "AED":
+//       codeDetails = "UAE Dirham";
+//       break;
+//     case "AFN":
+//       codeDetails = "Afghan Afghani";
+//       break;
+//     case "ALL":
+//       codeDetails = "Albanian Lek";
+//       break;
+//     case "AMD":
+//       codeDetails = "Armenian Dram";
+//       break;
+//     case "ANG":
+//       codeDetails = "Netherlands Antillian Guilder";
+//       break;
+//     case "AOA":
+//       codeDetails = "Angolan Kwanza";
+//       break;
+//     case "ARS":
+//       codeDetails = "Argentine Peso";
+//       break;
+//     case "AUD":
+//       codeDetails = "Australian Dollar";
+//       break;
+//     case "AWG":
+//       codeDetails = "Aruban Florin";
+//       break;
+//     case "AZN":
+//       codeDetails = "Azerbaijani Manat";
+//       break;
+//     case "BAM":
+//       codeDetails = "Bosnia and Herzegovina Mark";
+//       break;
+//     case "BBD":
+//       codeDetails = "Barbados Dollar";
+//       break;
+//     case "BDT":
+//       codeDetails = "Bangladeshi Taka";
+//       break;
+//     case "BGN":
+//       codeDetails = "Bulgarian Lev";
+//       break;
+//     case "BHD":
+//       codeDetails = "Bahraini Dinar";
+//       break;
+//     case "BIF":
+//       codeDetails = "Burundian Franc";
+//       break;
+//     case "BMD":
+//       codeDetails = "Bermudian Dollar";
+//       break;
+//     case "BND":
+//       codeDetails = "Brunei Dollar";
+//       break;
+//     case "BOB":
+//       codeDetails = "Bolivian Boliviano";
+//       break;
+//     case "BRL":
+//       codeDetails = "Brazilian Real";
+//       break;
+//     case "BSD":
+//       codeDetails = "Bahamian Dollar";
+//       break;
+//     case "BTN":
+//       codeDetails = "Bhutanese Ngultrum";
+//       break;
+//     case "BWP":
+//       codeDetails = "Botswana Pula";
+//       break;
+//     case "BYN":
+//       codeDetails = "Belarusian Ruble";
+//       break;
+//     case "BZD":
+//       codeDetails = "Belize Dollar";
+//       break;
+//     case "CAD":
+//       codeDetails = "Canadian Dollar";
+//       break;
+//     case "CDF":
+//       codeDetails = "Congolese Franc";
+//       break;
+//     case "CHF":
+//       codeDetails = "Swiss Franc";
+//       break;
+//     case "CLP":
+//       codeDetails = "Chilean Peso";
+//       break;
+//     case "CNY":
+//       codeDetails = "Chinese Renminbi";
+//       break;
+//     case "COP":
+//       codeDetails = "Colombian Peso";
+//       break;
+//     case "CRC":
+//       codeDetails = "Costa Rican Colon";
+//       break;
+//     case "CUC":
+//       codeDetails = "Cuban Convertible Peso";
+//       break;
+//     case "CUP":
+//       codeDetails = "Cuban Peso";
+//       break;
+//     case "CVE":
+//       codeDetails = "Cape Verdean Escudo";
+//       break;
+//     case "CZK":
+//       codeDetails = "Czech Koruna";
+//       break;
+//     case "DJF":
+//       codeDetails = "Djiboutian Franc";
+//       break;
+//     case "DKK":
+//       codeDetails = "Danish Krone";
+//       break;
+//     case "DOP":
+//       codeDetails = "Dominican Peso";
+//       break;
+//     case "DZD":
+//       codeDetails = "Algerian Dinar";
+//       break;
+//     case "EGP":
+//       codeDetails = "Egyptian Pound";
+//       break;
+//     case "ERN":
+//       codeDetails = "Eritrean Nakfa";
+//       break;
+//     case "ETB":
+//       codeDetails = "Ethiopian Birr";
+//       break;
+//     case "EUR":
+//       codeDetails = "Euro";
+//       break;
+//     case "FJD":
+//       codeDetails = "Fiji Dollar";
+//       break;
+//     case "FKP":
+//       codeDetails = "Falkland Islands Pound";
+//       break;
+//     case "FOK":
+//       codeDetails = "Faroese Króna";
+//       break;
+//     case "GBP":
+//       codeDetails = "Pound Sterling";
+//       break;
+//     case "GEL":
+//       codeDetails = "Georgian Lari";
+//       break;
+//     case "GGP":
+//       codeDetails = "Guernsey Pound";
+//       break;
+//     case "GHS":
+//       codeDetails = "Ghanaian Cedi";
+//       break;
+//     case "GIP":
+//       codeDetails = "Gibraltar Pound";
+//       break;
+//     case "GMD":
+//       codeDetails = "Gambian Dalasi";
+//       break;
+//     case "GNF":
+//       codeDetails = "Guinean Franc";
+//       break;
+//     case "GTQ":
+//       codeDetails = "Guatemalan Quetzal";
+//       break;
+//     case "GYD":
+//       codeDetails = "Guyanese Dollar";
+//       break;
+//     case "HKD":
+//       codeDetails = "Hong Kong Dollar";
+//       break;
+//     case "HNL":
+//       codeDetails = "Honduran Lempira";
+//       break;
+//     case "HRK":
+//       codeDetails = "Croatian Kuna";
+//       break;
+//     case "HTG":
+//       codeDetails = "Haitian Gourde";
+//       break;
+//     case "HUF":
+//       codeDetails = "Hungarian Forint";
+//       break;
+//     case "IDR":
+//       codeDetails = "Indonesian Rupiah";
+//       break;
+//     case "ILS":
+//       codeDetails = "Israeli New Shekel";
+//       break;
+//     case "IMP":
+//       codeDetails = "Manx Pound";
+//       break;
+//     case "INR":
+//       codeDetails = "Indian Rupee";
+//       break;
+//     case "IQD":
+//       codeDetails = "Iraqi Dinar";
+//       break;
+//     case "IRR":
+//       codeDetails = "Iranian Rial";
+//       break;
+//     case "ISK":
+//       codeDetails = "Icelandic Króna";
+//       break;
+//     case "JMD":
+//       codeDetails = "Jamaican Dollar";
+//       break;
+//     case "JOD":
+//       codeDetails = "Jordanian Dinar";
+//       break;
+//     case "JPY":
+//       codeDetails = "Japanese Yen";
+//       break;
+//     case "KES":
+//       codeDetails = "Kenyan Shilling";
+//       break;
+//     case "KGS":
+//       codeDetails = "Kyrgyzstani Som";
+//       break;
+//     case "KHR":
+//       codeDetails = "Cambodian Riel";
+//       break;
+//     case "KID":
+//       codeDetails = "Kiribati Dollar";
+//       break;
+//     case "KMF":
+//       codeDetails = "Comorian Franc";
+//       break;
+//     case "KRW":
+//       codeDetails = "South Korean Won";
+//       break;
+//     case "KWD":
+//       codeDetails = "Kuwaiti Dinar";
+//       break;
+//     case "KYD":
+//       codeDetails = "Cayman Islands Dollar";
+//       break;
+//     case "KZT":
+//       codeDetails = "Kazakhstani Tenge";
+//       break;
+//     case "LAK":
+//       codeDetails = "Lao Kip";
+//       break;
+//     case "LBP":
+//       codeDetails = "Lebanese Pound";
+//       break;
+//     case "LKR":
+//       codeDetails = "Sri Lanka Rupee";
+//       break;
+//     case "LRD":
+//       codeDetails = "Liberian Dollar";
+//       break;
+//     case "LSL":
+//       codeDetails = "Lesotho Loti";
+//       break;
+//     case "LYD":
+//       codeDetails = "Libyan Dinar";
+//       break;
+//     case "MAD":
+//       codeDetails = "Moroccan Dirham";
+//       break;
+//     case "MDL":
+//       codeDetails = "Moldovan Leu";
+//       break;
+//     case "MGA":
+//       codeDetails = "Malagasy Ariary";
+//       break;
+//     case "MKD":
+//       codeDetails = "Macedonian Denar";
+//       break;
+//     case "MMK":
+//       codeDetails = "Burmese Kyat";
+//       break;
+//     case "MNT":
+//       codeDetails = "Mongolian Tögrög";
+//       break;
+//     case "MOP":
+//       codeDetails = "Macanese Pataca";
+//       break;
+//     case "MRU":
+//       codeDetails = "Mauritanian Ouguiya";
+//       break;
+//     case "MUR":
+//       codeDetails = "Mauritian Rupee";
+//       break;
+//     case "MVR":
+//       codeDetails = "Maldivian Rufiyaa";
+//       break;
+//     case "MWK":
+//       codeDetails = "Malawian Kwacha";
+//       break;
+//     case "MXN":
+//       codeDetails = "Mexican Peso";
+//       break;
+//     case "MYR":
+//       codeDetails = "Malaysian Ringgit";
+//       break;
+//     case "MZN":
+//       codeDetails = "Mozambican Metical";
+//       break;
+//     case "NAD":
+//       codeDetails = "Namibian Dolla";
+//       break;
+//     case "NGN":
+//       codeDetails = "Nigerian Naira";
+//       break;
+//     case "NIO":
+//       codeDetails = "Nicaraguan Córdoba";
+//       break;
+//     case "NOK":
+//       codeDetails = "Norwegian Krone";
+//       break;
+//     case "NPR":
+//       codeDetails = "Nepalese Rupee";
+//       break;
+//     case "NZD":
+//       codeDetails = "New Zealand Dollar";
+//       break;
+//     case "OMR":
+//       codeDetails = "Omani Rial";
+//       break;
+//     case "PAB":
+//       codeDetails = "Panamanian Balboa";
+//       break;
+//     case "PEN":
+//       codeDetails = "Peruvian Sol";
+//       break;
+//     case "PGK":
+//       codeDetails = "Papua New Guinean Kina";
+//       break;
+//     case "PHP":
+//       codeDetails = "Philippine Peso";
+//       break;
+//     case "PKR":
+//       codeDetails = "Pakistani Rupee";
+//       break;
+//     case "PLN":
+//       codeDetails = "Polish Złoty";
+//       break;
+//     case "PYG":
+//       codeDetails = "Paraguayan Guaraní";
+//       break;
+//     case "QAR":
+//       codeDetails = "Qatari Riyal";
+//       break;
+//     case "RON":
+//       codeDetails = "Romanian Leu";
+//       break;
+//     case "RSD":
+//       codeDetails = "Serbian Dinar";
+//       break;
+//     case "RUB":
+//       codeDetails = "Russian Ruble";
+//       break;
+//     case "RWF":
+//       codeDetails = "Rwandan Franc";
+//       break;
+//     case "SAR":
+//       codeDetails = "Saudi Riyal";
+//       break;
+//     case "SBD":
+//       codeDetails = "Solomon Islands Dollar";
+//       break;
+//     case "SCR":
+//       codeDetails = "Seychellois Rupee";
+//       break;
+//     case "SDG":
+//       codeDetails = "Sudanese Pound";
+//       break;
+//     case "SEK":
+//       codeDetails = "Swedish Krona";
+//       break;
+//     case "SGD":
+//       codeDetails = "Singapore Dollar";
+//       break;
+//     case "SHP":
+//       codeDetails = "Saint Helena Pound";
+//       break;
+//     case "SLL":
+//       codeDetails = "Sierra Leonean Leone";
+//       break;
+//     case "SOS":
+//       codeDetails = "Somali Shilling";
+//       break;
+//     case "SRD":
+//       codeDetails = "Surinamese Dollar";
+//       break;
+//     case "SSP":
+//       codeDetails = "South Sudanese Pound";
+//       break;
+//     case "STN":
+//       codeDetails = "São Tomé and Príncipe Dobra";
+//       break;
+//     case "SYP":
+//       codeDetails = "Syrian Pound";
+//       break;
+//     case "SZL":
+//       codeDetails = "Eswatini Lilangeni";
+//       break;
+//     case "THB":
+//       codeDetails = "Thai Baht";
+//       break;
+//     case "TJS":
+//       codeDetails = "Tajikistani Somoni";
+//       break;
+//     case "TMT":
+//       codeDetails = "Turkmenistan Manat";
+//       break;
+//     case "TND":
+//       codeDetails = "Tunisian Dinar";
+//       break;
+//     case "TOP":
+//       codeDetails = "Tongan Paʻanga";
+//       break;
+//     case "TRY":
+//       codeDetails = "Turkish Lira";
+//       break;
+//     case "TTD":
+//       codeDetails = "Trinidad and Tobago Dollar";
+//       break;
+//     case "TVD":
+//       codeDetails = "Tuvaluan Dollar";
+//       break;
+//     case "TWD":
+//       codeDetails = "New Taiwan Dollar";
+//       break;
+//     case "TZS":
+//       codeDetails = "Tanzanian Shilling";
+//       break;
+//     case "UAH":
+//       codeDetails = "Ukrainian Hryvnia";
+//       break;
+//     case "UGX":
+//       codeDetails = "Ugandan Shilling";
+//       break;
+//     case "USD":
+//       codeDetails = "United States Dollar";
+//       break;
+//     case "UYU":
+//       codeDetails = "Uruguayan Peso";
+//       break;
+//     case "UZS":
+//       codeDetails = "Uzbekistani So'm";
+//       break;
+//     case "VES":
+//       codeDetails = "Venezuelan Bolívar Soberano";
+//       break;
+//     case "VND":
+//       codeDetails = "Vietnamese Đồng";
+//       break;
+//     case "VUV":
+//       codeDetails = "Vanuatu Vatu";
+//       break;
+//     case "WST":
+//       codeDetails = "Samoan Tālā";
+//       break;
+//     case "XAF":
+//       codeDetails = "Central African CFA Franc";
+//       break;
+//     case "XCD":
+//       codeDetails = "East Caribbean Dollar";
+//       break;
+//     case "XDR":
+//       codeDetails = "Special Drawing Rights";
+//       break;
+//     case "XOF":
+//       codeDetails = "West African CFA franc";
+//       break;
+//     case "XPF":
+//       codeDetails = "CFP Franc";
+//       break;
+//     case "YER":
+//       codeDetails = "Yemeni Rial";
+//       break;
+//     case "ZAR":
+//       codeDetails = "South African Rand";
+//       break;
+//     case "ZMW":
+//       codeDetails = "Zambian Kwacha";
+//       break;
 //   }
+//   return codeDetails;
 // }
-
-
-
-    // <option"AED"	"UAE Dirham - United Arab Emirates"
-    // <option"AFN"	"Afghan Afghani	- Afghanistan"
-    // <option"ALL"	"Albanian Lek	- Albania"
-    // <option"AMD"	"Armenian Dram - Armenia"
-    // <option"ANG"	"Netherlands Antillian Guilder - Netherlands Antilles"
-    // <option"AOA"	"Angolan Kwanza	- Angola"
-    // <option"ARS"	"Argentine Peso	- Argentina"
-    // <option"AUD"	"Australian Dollar - Australia"
-    // <option"AWG"	"Aruban Florin - Aruba"
-    // <option"AZN"	"Azerbaijani Manat - Azerbaijan"
-    // <option"BAM"	"Bosnia and Herzegovina Mark - Bosnia and Herzegovina"
-    // <option"BBD"	"Barbados Dollar - Barbados"
-    // <option"BDT"	"Bangladeshi Taka	- Bangladesh"
-    // <option"BGN"	"Bulgarian Lev - Bulgaria"
-    // <option"BHD"	"Bahraini Dinar	- Bahrain"
-    // <option"BIF"	"Burundian Franc - Burundi"
-    // <option"BMD"	"Bermudian Dollar	- Bermuda"
-    // <option"BND"	"Brunei Dollar - Brunei"
-    // <option"BOB"	"Bolivian Boliviano	- Bolivia"
-    // <option"BRL"	"Brazilian Real	- Brazil"
-    // <option"BSD"	"Bahamian Dollar - Bahamas"
-    // <option"BTN"	"Bhutanese Ngultrum	- Bhutan"
-    // <option"BWP"	"Botswana Pula - Botswana"
-    // <option"BYN"	"Belarusian Ruble	- Belarus"
-    // <option"BZD"	"Belize Dollar - Belize"
-    // <option"CAD"	"Canadian Dollar - Canada"
-    // <option"CDF"	"Congolese Franc - Democratic Republic of the Congo"
-    // <option"CHF"	"Swiss Franc - Switzerland"
-    // <option"CLP"	"Chilean Peso	- Chile"
-    // <option"CNY"	"Chinese Renminbi	- China"
-    // <option"COP"	"Colombian Peso	- Colombia"
-    // <option"CRC"	"Costa Rican Colon - Costa Rica"
-    // <option"CUC"	"Cuban Convertible Peso	- Cuba"
-    // <option"CUP"	"Cuban Peso	- Cuba"
-    // <option"CVE"	"Cape Verdean Escudo - Cape Verde"
-    // <option"CZK"	"Czech Koruna	- Czech Republic"
-    // <option"DJF"	"Djiboutian Franc	- Djibouti"
-    // <option"DKK"	"Danish Krone	- Denmark"
-    // <option"DOP"	"Dominican Peso	- Dominican Republic"
-    // <option"DZD"	"Algerian Dinar	- Algeria"
-    // <option"EGP"	"Egyptian Pound	- Egypt"
-    // <option"ERN"	"Eritrean Nakfa	- Eritrea"
-    // <option"ETB"	"Ethiopian Birr	- Ethiopia"
-    // <option"EUR"	"Euro	- European Union"
-    // <option"FJD"	"Fiji Dollar - Fiji"
-    // <option"FKP"	"Falkland Islands Pound	- Falkland Islands"
-    // <option"FOK"	"Faroese Króna - Faroe Islands"
-    // <option"GBP"	"Pound Sterling	- United Kingdom"
-    // <option"GEL"	"Georgian Lari - Georgia"
-    // <option"GGP"	"Guernsey Pound	- Guernsey"
-    // <option"GHS"	"Ghanaian Cedi - Ghana"
-    // <option"GIP"	"Gibraltar Pound - Gibraltar"
-    // <option"GMD"	"Gambian Dalasi - The Gambia"
-    // <option"GNF"	"Guinean Franc - Guinea"
-    // <option"GTQ"	"Guatemalan Quetzal	- Guatemala"
-    // <option"GYD"	"Guyanese Dollar - Guyana"
-    // <option"HKD"	"Hong Kong Dollar	- Hong Kong"
-    // <option"HNL"	"Honduran Lempira	- Honduras"
-    // <option"HRK"	"Croatian Kuna - Croatia"
-    // <option"HTG"	"Haitian Gourde	- Haiti"
-    // <option"HUF"	"Hungarian Forint	- Hungary"
-    // <option"IDR"	"Indonesian Rupiah - Indonesia"
-    // <option"ILS"	"Israeli New Shekel	- Israel"
-    // <option"IMP"	"Manx Pound	- Isle of Man"
-    // <option"INR"	"Indian Rupee	- India"
-    // <option"IQD"	"Iraqi Dinar - Iraq"
-    // <option"IRR"	"Iranian Rial	- Iran"
-    // <option"ISK"	"Icelandic Króna - Iceland"
-    // <option"JMD"	"Jamaican Dollar - Jamaica"
-    // <option"JOD"	"Jordanian Dinar - Jordan"
-    // <option"JPY"	"Japanese Yen - Japan"
-    // <option"KES"	"Kenyan Shilling - Kenya"
-    // <option"KGS"	"Kyrgyzstani Som - Kyrgyzstan"
-    // <option"KHR"	"Cambodian Riel	- Cambodia"
-    // <option"KID"	"Kiribati Dollar - Kiribati"
-    // <option"KMF"	"Comorian Franc	- Comoros"
-    // <option"KRW"	"South Korean Won	- South Korea"
-    // <option"KWD"	"Kuwaiti Dinar - Kuwait"
-    // <option"KYD"	"Cayman Islands Dollar - Cayman Islands"
-    // <option"KZT"	"Kazakhstani Tenge - Kazakhstan"
-    // <option"LAK"	"Lao Kip - Laos"
-    // <option"LBP"	"Lebanese Pound	- Lebanon"
-    // <option"LKR"	"Sri Lanka Rupee - Sri Lanka"
-    // <option"LRD"	"Liberian Dollar - Liberia"
-    // <option"LSL"	"Lesotho Loti - Lesotho"
-    // <option"LYD"	"Libyan Dinar - Libya"
-    // <option"MAD"	"Moroccan Dirham - Morocco"
-    // <option"MDL"	"Moldovan Leu - Moldova"
-    // <option"MGA"	"Malagasy Ariary - Madagascar"
-    // <option"MKD"	"Macedonian Denar	- North Macedonia"
-    // <option"MMK"	"Burmese Kyat	- Myanmar"
-    // <option"MNT"	"Mongolian Tögrög	- Mongolia"
-    // <option"MOP"	"Macanese Pataca - Macau"
-    // <option"MRU"	"Mauritanian Ouguiya - Mauritania"
-    // <option"MUR"	"Mauritian Rupee - Mauritius"
-    // <option"MVR"	"Maldivian Rufiyaa - Maldives"
-    // <option"MWK"	"Malawian Kwacha - Malawi"
-    // <option"MXN"	"Mexican Peso	- Mexico"
-    // <option"MYR"	"Malaysian Ringgit - Malaysia"
-    // <option"MZN"	"Mozambican Metical - Mozambique"
-    // <option"NAD"	"Namibian Dolla - Namibia"
-    // <option"NGN"	"Nigerian Naira	- Nigeria"
-    // <option"NIO"	"Nicaraguan Córdoba	- Nicaragua"
-    // <option"NOK"	"Norwegian Krone - Norway"
-    // <option"NPR"	"Nepalese Rupee	- Nepal"
-    // <option"NZD"	"New Zealand Dollar	- New Zealand"
-    // <option"OMR"	"Omani Rial	- Oman"
-    // <option"PAB"	"Panamanian Balboa - Panama"
-    // <option"PEN"	"Peruvian Sol	- Peru"
-    // <option"PGK"	"Papua New Guinean Kina	- Papua New Guinea"
-    // <option"PHP"	"Philippine Peso - Philippines"
-    // <option"PKR"	"Pakistani Rupee - Pakistan"
-    // <option"PLN"	"Polish Złoty	- Poland"
-    // <option"PYG"	"Paraguayan Guaraní	- Paraguay"
-    // <option"QAR"	"Qatari Riyal	- Qatar"
-    // <option"RON"	"Romanian Leu	- Romania"
-    // <option"RSD"	"Serbian Dinar - Serbia"
-    // <option"RUB"	"Russian Ruble - Russia"
-    // <option"RWF"	"Rwandan Franc - Rwanda"
-    // <option"SAR"	"Saudi Riyal - Saudi Arabia"
-    // <option"SBD"	"Solomon Islands Dollar - Solomon Islands"
-    // <option"SCR"	"Seychellois Rupee - Seychelles"
-    // <option"SDG"	"Sudanese Pound	- Sudan"
-    // <option"SEK"	"Swedish Krona - Sweden"
-    // <option"SGD"	"Singapore Dollar	- Singapore"
-    // <option"SHP"	"Saint Helena Pound	- Saint Helena"
-    // <option"SLL"	"Sierra Leonean Leone	- Sierra Leone"
-    // <option"SOS"	"Somali Shilling - Somalia"
-    // <option"SRD"	"Surinamese Dollar - Suriname"
-    // <option"SSP"	"South Sudanese Pound	- South Sudan"
-    // <option"STN"	"São Tomé and Príncipe Dobra - São Tomé and Príncipe"
-    // <option"SYP"	"Syrian Pound	- Syria"
-    // <option"SZL"	"Eswatini Lilangeni	- Eswatini"
-    // <option"THB"	"Thai Baht - Thailand"
-    // <option"TJS"	"Tajikistani Somoni	- Tajikistan"
-    // <option"TMT"	"Turkmenistan Manat	- Turkmenistan"
-    // <option"TND"	"Tunisian Dinar	- Tunisia"
-    // <option"TOP"	"Tongan Paʻanga	- Tonga"
-    // <option"TRY"	"Turkish Lira	- Turkey"
-    // <option"TTD"	"Trinidad and Tobago Dollar	- Trinidad and Tobago"
-    // <option"TVD"	"Tuvaluan Dollar - Tuvalu"
-    // <option"TWD"	"New Taiwan Dollar - Taiwan"
-    // <option"TZS"	"Tanzanian Shilling	- Tanzania"
-    // <option"UAH"	"Ukrainian Hryvnia - Ukraine"
-    // <option"UGX"	"Ugandan Shilling	- Uganda"
-    // <option"USD"	"United States Dollar	- United States"
-    // <option"UYU"	"Uruguayan Peso	- Uruguay"
-    // <option"UZS"	"Uzbekistani So'm	- Uzbekistan"
-    // <option"VES"	"Venezuelan Bolívar Soberano - Venezuela"
-    // <option"VND"	"Vietnamese Đồng - Vietnam"
-    // <option"VUV"	"Vanuatu Vatu	- Vanuatu"
-    // <option"WST"	"Samoan Tālā - Samoa"
-    // <option"XAF"	"Central African CFA Franc - CEMAC"
-    // <option"XCD"	"East Caribbean Dollar - Organisation of Eastern Caribbean States"
-    // <option"XDR"	"Special Drawing Rights	- International Monetary Fund"
-    // <option"XOF"	"West African CFA franc	- CFA"
-    // <option"XPF"	"CFP Franc - Collectivités d'Outre-Mer"
-    // <option"YER"	"Yemeni Rial - Yemen"
-    // <option"ZAR"	"South African Rand	- South Africa"
-    // <option"ZMW"	"Zambian Kwacha	- Zambia"

@@ -3,11 +3,12 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 import { CurrencyService } from './currency-service.js';
+import { codeIdentifier } from './switch.js';
 
 function displayRate(response, country, amount) {
   if(response.conversion_rates) {
     if (response.conversion_rates[country]) {
-      $("#outputRate").text(`Your currency amount is ${(response.conversion_rates[country] * amount).toFixed(2)}`);
+      $("#outputRate").text(`Your currency amount is ${(response.conversion_rates[country] * amount).toFixed(2)} ${codeIdentifier(country)}`);
     } else {
       $("#outputRate").text("Please enter a valid country code from the list of supported currencies");
     }
