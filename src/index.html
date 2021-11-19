@@ -5,11 +5,11 @@
   </head>
 <body>
   <div class="container">
-    <h1>Some Title</h1>
+    <h1>Currency Exchanger</h1>
     <form id="exchange">
       <div class="form-group">
-        <label for="amount">Enter your amount in US dollars:</label>
-        <input id="amount" type="number" class="form-control" required>
+        <label for="amount">Enter the amount to exchange:</label>
+        <input id="amount" type="number" class="form-control" min=1 required>
       </div>
       <div class="form-group">
         <label for="country">Select your country from the list:</label>
@@ -182,6 +182,7 @@
         <input id="countryCode" type="text" class="form-control">
       </div>
       <button type="submit" class="btn btn-success">Submit</button>
+      <button type="submit" class="btn btn-danger">Reverse exchange</button>
     </form>
     <div id="outputRate">
     </div>
