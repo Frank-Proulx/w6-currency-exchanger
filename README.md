@@ -6,23 +6,31 @@
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* HTML
+* CSS
+* Bootstrap
+* Javascript
+* JQuery
+* NPM
+* Webpack
 
 ## Description
 
 _{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
 
-## Setup/Installation Requirements
+## Setup/Installation Requirements  
 
 * Create and/or navigate to the directory you would like to contain this project on your computer.
-* Initialize a git repository by typing **git init** in the terminal.
-* Type **git clone https://github.com/Frank-Proulx/insert_name_here** to clone the repository to your local machine.
-* Open the file "index.html" in the newly created "portfolio-landing" folder using either the GUI in your finder window, or typing **cd insert_name_here** and pressing return to navigate into the project folder, and then typing **open index.html** in the terminal from within the **insert_name_here** folder.  
+* Initialize a git repository by typing git init in the terminal.
+* Type git clone https://github.com/Frank-Proulx/w6-currency-exchanger to clone the repository to your local machine.
+* Type npm install in the terminal to install all dependencies.  
+* Go to https://www.exchangerate-api.com/. Enter your email address in the field and click "Get Free Key!".
+* Create an account by entering a password along with your email.
+* Activate your account by verifying the email sent to you (you may need to look in your spam or promotions folder). The link in the email will take you to a dashboard with your key, an example api request and your total calls used/remaining for the month.
+* Create a .env file in your top level directory. Add your api key as follows (no curly brackets): API_KEY={your api key}.
+* Type npm run start into the terminal to start a server displaying the page.
 
-## Link to [GitHub Pages](https://frank-proulx.github.io//)
+## Link to [GitHub Pages](https://frank-proulx.github.io/w6-currency-exchanger/)
 
 ## Known Bugs
 
