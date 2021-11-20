@@ -1,6 +1,5 @@
 body {
   background-color: lightgray;
-  /* height: 100vh; */
 }
 
 .btn {
@@ -9,7 +8,6 @@ body {
 
 h1 {
   margin: 40px 0 10px 0;
-  /* text-align: center; */
 }
 
 #exchange {
@@ -43,5 +41,17 @@ input, select {
 img {
   width: 400px;
   height: auto;
-  margin-bottom: 100px;
+  position: relative;
+}
+
+#textContainer {
+  z-index: 1;
+  color: white;
+  width: 300px;
+  height: auto;
+  position: relative;
+  bottom: 270px;
+  left: 50px;
+  font-size: 35px;
+  background-color: black;
 }

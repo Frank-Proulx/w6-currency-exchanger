@@ -2,7 +2,7 @@
 
 #### By Frank Proulx
 
-#### _{Brief description of application}_
+#### A website that take an amount of currency and converts it to either a foreign currency or to US dollars using an api call.
 
 ## Technologies Used
 
@@ -16,7 +16,7 @@
 
 ## Description
 
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
+This website will take a number value and allow the user to choose a country from a large list of countries, it also allows them to enter a countries currency code, if they know it. It uses an api call to find the exchange rate between US dollars and that countries currency at that moment, giving the user the choice between converting to or from USD. It then displays the result.
 
 ## Setup/Installation Requirements  
 
@@ -34,8 +34,7 @@ _{This is a detailed description of your application. Give as much detail as nee
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+No known bugs.
 
 ## License
 
