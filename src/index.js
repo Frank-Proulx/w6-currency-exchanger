@@ -8,7 +8,7 @@ import { codeIdentifier } from './switch.js';
 function displayFromUSD(response, country, amount) {
   if(response.conversion_rates) {
     if (response.conversion_rates[country]) {
-      $("#outputRate").text(`Your currency amount is ${(parseFloat((amount * response.conversion_rates[country]).toFixed(2))).toLocaleString()} ${codeIdentifier(country)}`);
+      $("#outputRate").text(`You will receive: ${(parseFloat((amount * response.conversion_rates[country]).toFixed(2))).toLocaleString()} ${codeIdentifier(country)}`);
     } else {
       $("#outputRate").text("Please enter a valid country code from the list of supported currencies");
     }
@@ -20,7 +20,7 @@ function displayFromUSD(response, country, amount) {
 function displayToUSD(response, country, amount) {
   if(response.conversion_rates) {
     if (response.conversion_rates[country]) {
-      $("#outputRate").text(`Your currency amount is ${(parseFloat((amount / response.conversion_rates[country]).toFixed(2))).toLocaleString()} US dollars`);
+      $("#outputRate").text(`You will receive: ${(parseFloat((amount / response.conversion_rates[country]).toFixed(2))).toLocaleString()} US dollars`);
     } else {
       $("#outputRate").text("Please enter a valid country code from the list of supported currencies");
     }
@@ -47,5 +47,6 @@ $("#exchange").submit(function(event) {
         displayToUSD(response, countryCode, amount);
       }
     });
+  $("img").addClass("afterImage");  
 });
 
