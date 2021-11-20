@@ -8,7 +8,7 @@ import { codeIdentifier } from './switch.js';
 function displayFromUSD(response, country, amount) {
   if(response.conversion_rates) {
     if (response.conversion_rates[country]) {
-      $("#outputRate").text(`Your currency amount is ${(amount * response.conversion_rates[country]).toFixed(2)} ${codeIdentifier(country)}`);
+      $("#outputRate").text(`Your currency amount is ${(parseFloat((amount * response.conversion_rates[country]).toFixed(2))).toLocaleString()} ${codeIdentifier(country)}`);
     } else {
       $("#outputRate").text("Please enter a valid country code from the list of supported currencies");
     }
@@ -20,7 +20,7 @@ function displayFromUSD(response, country, amount) {
 function displayToUSD(response, country, amount) {
   if(response.conversion_rates) {
     if (response.conversion_rates[country]) {
-      $("#outputRate").text(`Your currency amount is ${(amount / response.conversion_rates[country]).toFixed(2)} US dollars`);
+      $("#outputRate").text(`Your currency amount is ${(parseFloat((amount / response.conversion_rates[country]).toFixed(2))).toLocaleString()} US dollars`);
     } else {
       $("#outputRate").text("Please enter a valid country code from the list of supported currencies");
     }

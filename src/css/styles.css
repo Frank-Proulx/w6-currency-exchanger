@@ -1,5 +1,6 @@
 body {
   background-color: lightgray;
+  /* height: 100vh; */
 }
 
 .btn {
@@ -7,14 +8,40 @@ body {
 }
 
 h1 {
-  margin: 40px 0 0 0;
+  margin: 40px 0 10px 0;
+  /* text-align: center; */
 }
 
 #exchange {
-  width: 40%;
+  width: 90%;
 }
 
-label {
-  margin-top: 10px;
-  margin-bottom: 10px;
+input, select {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+#countryCode {
+  width: 20%;
+}
+
+#blue-top {
+  height: 100px;
+  width: 100%;
+  background-color: darkblue;
+  margin-bottom: 70px;
+}
+
+#blue-bottom {
+  height: 100px;
+  width: 100%;
+  background-color: darkblue;
+  position: absolute;
+  bottom: 0;
+}
+
+img {
+  width: 400px;
+  height: auto;
+  margin-bottom: 100px;
 }
