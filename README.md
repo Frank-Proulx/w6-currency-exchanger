@@ -30,8 +30,6 @@ This website will take a number value and allow the user to choose a country fro
 * Create a .env file in your top level directory. Add your api key as follows (no curly brackets): API_KEY={your api key}.
 * Type npm run start into the terminal to start a server displaying the page.
 
-## Link to [GitHub Pages](https://frank-proulx.github.io/w6-currency-exchanger/)
-
 ## Known Bugs
 
 No known bugs.
